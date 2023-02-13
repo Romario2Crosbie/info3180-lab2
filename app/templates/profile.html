@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<img src="{{ url_for('static', filename='jhin.jpg') }}" alt="Jhin"/>
+<h1>Romario Crosbie</h1>
+    <p>Hi I'm Romario, as stated in the heading I'm (supposedly) a final year student attending UWI
+    I hope to have a productive year so I can finally graduate from this......lets just call it....institition.
+    </p>
+    <div class="profile-stats">
+        <p>Posts <span class="stat">100</span></p>
+        <p>Followers <span class="stat">500</span></p>
+        <p>Following <span class="stat">200</span></p>
+      </div>
+      
+      <button class="follow-button">Follow</button>
+{% endblock %}

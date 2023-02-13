@@ -1,10 +1,18 @@
 from app import app
 from flask import render_template, request, redirect, url_for, flash
+from datetime import datetime
+import datetime
 
 
 ###
 # Routing for your application.
-###
+#### 
+def format_date_joined(date):
+    return datetime.strftime(date, '%B, %Y')
+
+@app.route('/profile')
+def profile():
+ return render_template('profile.html')
 
 @app.route('/')
 def home():
